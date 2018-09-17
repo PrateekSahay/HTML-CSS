@@ -1,0 +1,332 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+	font-family: 'Quicksand', sans-serif;
+}
+
+html{
+	font: normal 16px sans-serif;
+	color: #555;
+}
+
+ul, nav{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+	opacity: 0.9;
+}
+
+a:hover{
+	opacity: 1;
+}
+
+a.btn{
+	color: #fff;
+	border-radius: 4px;
+	text-transform: uppercase;
+	background-color: #2196F3;
+	font-weight: 800;
+	text-align: center;
+}
+
+
+
+
+/* <Header> */
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background-color: rgba(204, 204, 204, 0.564);
+
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: rgba(255, 255, 255, 0.74);
+	padding: 15px 75px 15px;
+}
+
+header h2:hover {
+    color: black;
+}
+
+header li:hover {
+    color: black;
+}
+
+header nav{
+	display: flex;
+}
+
+header nav ul{
+	display: flex;
+	flex-direction: row;
+}
+
+header nav li{
+	margin: 0 15px;
+	font-size: 20px;
+}
+
+@media (max-width: 1000px){
+	header{
+		padding: 10px 25px;
+	}
+}
+
+@media (max-width: 700px){
+
+	/*header nav{
+		display: none;
+	}*/
+
+	header {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	header h2{
+		margin: 5px 0;
+	}
+
+	header nav li {
+		margin: 5px 0;
+		text-align: center;
+	}
+
+	header nav ul {
+		flex-direction: column;
+	}
+
+}
+
+	/* </Header> */
+
+	/* <Hero> */
+
+.hero{
+	position: relative;
+	justify-content: center;
+	min-height: 100vh;
+	color: #fff;
+	text-align: center;
+}
+
+.hero .background-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-color: #2196F3;
+	background-position: center;
+	z-index: -1;
+}
+
+.hero .background-image:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #414a4f;
+	opacity: 0.5;
+}
+
+.hero h1{
+	font-weight: bold;
+	font-size: 40px;
+	margin-bottom: 15px;
+}
+
+.hero h3{
+	font-weight: normal;
+	font-size: 18px;
+	margin-bottom: 40px;
+}
+
+.hero a.btn{
+	padding: 20px 46px;
+	background-color: rgb(153, 5, 141);
+}
+
+@media (max-width: 800px){
+
+	.hero{
+		min-height: 600px;
+	}
+
+	.hero h1{
+		font-size: 35px;
+	}
+
+	.hero h3{
+		font-size: 15px;
+	}
+
+	.hero a.btn{
+		padding: 15px 40px;
+	}
+
+}
+
+/* </Hero> */
+
+/* <Features> */
+
+.features{
+	background-color: #f7f7f7;
+}
+
+.features .grid li{
+	padding: 0 30px;
+	flex-basis: 33%;
+	text-align: center;
+}
+
+.features .grid li i{
+    font-size: 50px;
+    color: #2196F3;
+    margin-bottom: 25px;
+}
+
+.features .grid li h4{
+	color: #555;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.features .grid li p{
+    margin: 0;
+}
+
+@media (max-width: 1000px){
+
+	.features .grid li{
+		flex-basis: 70%;
+		margin-bottom: 65px;
+	}
+
+	.features .grid li:last-child{
+		margin-bottom: 0;
+	}
+
+}
+
+@media (max-width: 600px){
+
+	.features .grid li{
+		flex-basis: 100%;
+	}
+
+}
+
+hr{
+	width: 150px;
+	height: 2px;
+	background-color: #2196F3;
+	border: 0;
+	margin-bottom: 80px;
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 100px 50px;
+}
+
+@media (max-width: 1000px){
+
+	section{
+		padding: 100px 50px;
+	}
+
+}
+
+@media (max-width: 600px){
+
+	section{
+		padding: 80px 30px;
+	}
+
+}
+
+section p{
+	max-width: 800px;
+	text-align: center;
+	margin-bottom: 35px;
+	padding: 0 20px;
+	line-height: 2;
+}
+
+ul.grid{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/* </Features>
+
+/* <Footer> */
+footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	background-color: #414a4f;
+	padding: 60px 0;
+}
+
+footer ul{
+	display: flex;
+	margin-bottom: 25px;
+	font-size: 32px;
+}
+
+footer ul li{
+	margin: 0 8px;	
+	font-size: 20px
+}
+
+footer ul li:first-child{
+	margin-left: 0;	
+}
+
+footer ul li:last-child{
+	margin-right: 0;	
+}
+
+footer p{
+	text-transform: uppercase;
+	font-size: 14px;
+	color: rgba(255,255,255,0.6);
+	margin-bottom: 10px;
+}
+
+footer p a{
+	color: #fff;
+}
+
+@media (max-width: 700px){
+
+	footer, footer ul{
+		flex-direction: column;
+		padding: 80px 15px;
+	}
+
+}
+/* </Footer>
