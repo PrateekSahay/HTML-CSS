@@ -23,6 +23,7 @@ a{
 
 a:hover{
 	opacity: 1;
+	color: antiquewhite;
 }
 
 a.btn{
@@ -44,7 +45,8 @@ header{
 	top: 0;
 	left: 0;
 	z-index: 10;
-	background-color: rgba(204, 204, 204, 0.564);
+	/*background-color: rgba(204, 204, 204, 0.564);*/
+	background-color: black;
 
 	width: 100%;
 	display: flex;
@@ -329,4 +331,4 @@ footer p a{
 	}
 
 }
-/* </Footer>
+/* </Footer> */
